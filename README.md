@@ -29,7 +29,7 @@ git clone https://github.com/ymrmld/kittygram_final.git
 cd kittygram_final
 ```
 
-Cоздать и активировать виртуальное окружение, установить зависимости(команды для MacOS):
+Cоздать и активировать виртуальное окружение, установить зависимости (команды для MacOS):
 
 ```bash
 python3 -m venv venv
