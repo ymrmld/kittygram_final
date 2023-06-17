@@ -55,7 +55,7 @@ docker compose -f docker-compose.yml exec backend python manage.py migrate
 Соберите статику и скопируйте ее:
 
 ```bash
-docker compose -f docker-compose.yml exec backend python manage.py collectstatic  && \
+docker compose -f docker-compose.yml exec backend python manage.py collectstatic
 docker compose -f docker-compose.yml exec backend cp -r /app/static_backend/. /static/static/
 ```
 
@@ -73,8 +73,6 @@ DB_NAME=kittygram
 ```
 
 ## Workflow
-
-Для использования Continuous Integration (CI) и Continuous Deployment (CD): в репозитории GitHub Actions `Settings/Secrets/Actions` прописать Secrets - переменные окружения для доступа к сервисам:
 
 ```
 SECRET_KEY                     # стандартный ключ, который создается при старте проекта
